@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mymodule">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <script src="/static/angular.js"></script>
+    <script src="/static/3.js"></script>
+  </head>
+  <body ng-controller="contro" class="bg-warning">
+    <h1>Result flask Api</h1>
+    <input
+      class="form-control"
+      type="number"
+      ng-model="reg"
+      placeholder="enter registration no :"
+      autofocus
+      ng-change="up()"
+    />
+    <hr />
+    <div class="table-responsive">
+      <table class="table table-striped table-dark table-hover">
+        <thead class="thead-dark">
+          <tr>
+            <th>subcode</th>
+            <th>subname</th>
+            <th>grade</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="x in data">
+            <td>{a x.subcode a}</td>
+            <td>{a x.subjectname a}</td>
+            <td>{a x.grade a}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
