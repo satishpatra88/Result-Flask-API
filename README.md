@@ -11,6 +11,7 @@
 - Using Sqlite as Database
 - Light weight in nature
 - Fastest Results
+- awsome project
 
 # New Features!
 
